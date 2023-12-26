@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const BikeModel = new mongoose.Schema({
   ID: {
     type: Number,
+    unique: true,
     require: true
   },
   name: {
@@ -28,7 +29,12 @@ const BikeModel = new mongoose.Schema({
   description: {
     type: String,
     required: true
+  },
+  status: {
+    type: String,
+    enum: ['Available', 'Busy', 'Unavailable'],
+    default: 'Available'
   }
 });
 
-module.exports = mongoose.Model("Bike", BikeModel);
+module.exports = mongoose.model("Bike", BikeModel);
