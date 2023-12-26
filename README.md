@@ -1,4 +1,4 @@
-Instructions how to start project:
+Instructions how to start app:
 1) Install NodeJs 
 2) Clone or download app.
 3) Open terminal and install packages, using command "npm i"
