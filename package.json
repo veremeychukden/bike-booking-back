@@ -1,0 +1,27 @@
+{
+  "name": "bike-booking-back",
+  "version": "1.0.0",
+  "description": "an admin panel for a company that provides bicycle booking services.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/veremeychukden/bike-booking-back.git"
+  },
+  "author": "veremeychukden",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/veremeychukden/bike-booking-back/issues"
+  },
+  "homepage": "https://github.com/veremeychukden/bike-booking-back#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.3",
+    "router": "^1.3.8"
+  }
+}
