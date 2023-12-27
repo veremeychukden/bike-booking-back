@@ -50,10 +50,11 @@ class BikeController {
         {
           returnDocument: "after",
         }
-      )
-      .then(bike => res.status(200).json(bike));
+      );
+      const bikes = await BikeModel.find();
+      res.status(200).json(bikes);
     } catch (error) {
-      res.status(500).json(err.message);
+      res.status(500).json(error.message);
     }
   }
 
