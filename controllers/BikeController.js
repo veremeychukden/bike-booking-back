@@ -61,7 +61,8 @@ class BikeController {
     try {
       const bikeId = req.params.id;
       await BikeModel.findOneAndDelete({ ID: bikeId })
-      .then(bike => res.status(200).json(bike));
+      const bikes = await BikeModel.find();
+      res.status(200).json(bikes);
     } catch (error) {
       res.status(500).json(error.message);
     }
